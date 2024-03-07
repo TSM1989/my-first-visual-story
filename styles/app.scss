@@ -1,6 +1,7 @@
 // RESET
 // Smooths out the rough edges across browsers
 @use './tools/normalize';
+@use 'node_modules/leaflet/dist/leaflet';
 
 // VARIABLES
 // Reusable settings
@@ -81,4 +82,10 @@ p {
       min-height: 360px;
     }
   }
+}
+
+#map path {
+  fill: #e64d1f;
+  fill-opacity: 0.5;
+  stroke-opacity: 0;
 }
