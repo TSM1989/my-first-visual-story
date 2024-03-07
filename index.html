@@ -5,6 +5,7 @@
   <time datetime="2024-03-07" pubdate>March 7, 2024</time>
 {% endblock pubdate %}
 {% block content %}
-
-
+{% for obj in harvard_park_homicides %}
+{{ obj.first_name }} {{ obj.last_name }}<br>
+{% endfor %}
 {% endblock content %}
